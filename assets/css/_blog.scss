@@ -1,0 +1,110 @@
+  /************************/
+ /****** 5.blog Area ******/
+/**************************/
+.blog-area {
+    width: 100%;
+    position: relative;
+
+     &::after{
+        position: absolute;
+        content: '';
+        background: url(../img/shape/4.png) no-repeat;
+        width: 280px;
+        height: 650px;
+        top: 25%;
+        right: 0;
+        z-index: -1;
+        // background-size: auto 70%;
+    }
+    .blog-heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        .blog-content {
+            h4 {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-self: flex-end;
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+
+            li {
+                a {
+                    margin-right: 1.5rem;
+                    display: block;
+                    color: var(--color-1);
+                    font-size: 2rem;
+                }
+
+                &:first-child a {
+                    color: var(--color-3);
+                }
+            }
+        }
+    }
+
+    .news-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+
+        .single-news{
+            padding: 3rem;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
+            border-radius: 0.3rem;
+            transition: 0.5s all ease;
+
+            h5{
+                margin-bottom: 2rem;
+                a{
+                    color: var(--color-1);
+                    transition: 0.5s all ease;
+                }
+            }
+            .date{
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                transition: 0.5s all ease;
+            }
+
+            p{
+                color: var(--color-1);
+                font-size: 1.8rem;
+                margin-bottom: 3rem;
+                transition: 0.5s all ease;
+            }
+            .read-more{
+                float: right;
+
+                i{
+                    font-size: 3rem;
+                    color: var(--color-1);
+                    transition: 0.5s all ease;
+                }
+            }
+            &:hover h5 a{
+                color: var(--colorff);
+            }
+            &:hover .date{
+                color: var(--colorff);
+            }
+            &:hover p{
+                color: var(--colorff);
+            }
+            &:hover .read-more i{
+                color: var(--colorff);
+            }
+            &:hover{
+                background: var(--color-2);
+                color: var(--colorff);
+            }
+        }
+    }
+}
+

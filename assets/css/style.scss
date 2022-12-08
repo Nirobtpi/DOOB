@@ -1,0 +1,147 @@
+  
+/* 
+    Template Name:Doob
+    Template Url:......
+    Author :Nirob
+*/
+
+/*
+  Table of content:
+  1:Header Area
+  2:Services Area
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.8rem;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+.section-padding{
+    padding: 8rem 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+h1{
+  color: var(--color-1);
+	font-weight: 600;
+	font-size: 6rem; 
+}
+h2{
+  font-size:4.5rem;
+  font-weight: 600;
+  color:var(--color-1);
+  line-height: 5rem;
+}
+h3{
+  font-size: 2.7rem;
+  font-weight: 600;
+  color:var(--color-1);
+  line-height: 4rem;
+}
+h4{
+  color:var(--color-2);
+  font-size:1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  
+}
+h5 {
+  color: var(--color-1);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+p{
+  font-size:1.8rem;
+  font-weight: 400;
+  color:var(--color-3);
+  line-height: 2.5rem;
+}
+img{
+    display: block;
+}
+
+.btn-sty-2{
+    color: var(--color-2);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(25, 45, 51, 0.15);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: 0.5s all ease;
+    z-index: 1;
+    background: var(--colorff);
+
+    &:hover{
+        background: var(--color-2);
+        color: var(--colorff);
+    }
+
+} 
+.btn-sty-1{
+    color: var(--colorff);
+    padding: 1.8rem 3rem;
+    display: inline-block;
+    background: var(--color-2);
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.5s all ease;
+
+    &:hover{
+        background: var(--color-1);
+    }
+}
+
+.btn-sty-3{
+    display: inline-block;
+    margin-left: 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--color-1);
+    transition: 0.5s all ease;
+    &:hover{
+        color: var(--color-2);
+    }
+    
+}
+
+:root{
+    --color-1:#314584;
+    --color-2: #ff3946;
+    --color-3: #6e757a;
+    --colorff: #fff;
+}
+// scss link 
+
+@import 'header';
+@import 'services';
+@import 'about';
+@import 'work-area';
+@import 'blog';
+@import 'contact';
+@import 'footer';
+@import 'responsive';

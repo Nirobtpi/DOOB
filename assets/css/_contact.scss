@@ -1,0 +1,88 @@
+.contact-area {
+    width: 100%;
+    position: relative;
+    padding-bottom: 3rem;
+    .contact-heading {
+        margin-bottom: 4rem;
+
+        h4 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .contact-form {
+        form {
+
+            .form-group {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 3rem;
+
+                .contact-item-half {
+                    margin-bottom: 3rem;
+
+                    input {
+                        width: 100%;
+                        padding: 1.8rem 2rem;
+                        background: #f4fafe;
+                        outline: none;
+                        border: none;
+                        border-radius: 0.5rem;
+
+                        &::placeholder {
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                            color: var(--color-1);
+                            opacity: 1;
+                        }
+                    }
+                }
+
+
+            }
+
+            .contact-item-full {
+                text-align: center;
+                // margin-bottom: 3rem;
+
+                textarea {
+                    width: 100%;
+                    padding: 1.5rem 2rem;
+                    background: #f4fafe;
+                    outline: none;
+                    border: none;
+                    height: 11rem;
+                    resize: vertical;
+                    border-radius: 0.5rem;
+
+                    &::placeholder {
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: var(--color-1);
+                        opacity: 1;
+                    }
+                }
+
+                input[type=submit] {
+                    color: var(--colorff);
+                    padding: 1.4rem 2.5rem;
+                    background: var(--color-2);
+                    border-radius: 5rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.5s all ease;
+
+                    &:hover {
+                        background: var(--color-1);
+                    }
+                }
+            }
+            .same{
+                margin: 3rem 0;
+            }
+        }
+    }
+}
